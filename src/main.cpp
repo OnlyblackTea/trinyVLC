@@ -1,5 +1,6 @@
-#include <vlcpp/vlc.hpp>
+#include "vlcpp/vlc.hpp"
 #include <iostream>
+#include <thread>
 using namespace std;
 
 int main(int argc, char** argv) {
@@ -17,7 +18,6 @@ int main(int argc, char** argv) {
     auto mp = VLC::MediaPlayer(media);
 #endif
     mp.play();
-    std::this_thread:sleep_for( std::chrono::seconds(10) );
 #if LIBVLC_VERSION_INT >= LIBVLC_VERSION(4, 0, 0, 0)
     mp.stopAsync();
 #else
