@@ -23,5 +23,6 @@ AC_CHECK_HEADERS([libvlcpp/vlcpp/vlc.hpp],[]
 # Checks for library functions.
 
 AC_CONFIG_SUBDIRS([libvlcpp])
-AC_CONFIG_FILES([Makefile])
+AC_CONFIG_FILES([Makefile],
+		[src/Makefile])
 AC_OUTPUT

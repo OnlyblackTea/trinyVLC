@@ -6530,6 +6530,7 @@ See \`config.log' for more details" "$LINENO" 5; }
   rm -f conftest-deps.mk
 }
  ;;
+    "Makefile":F) src/Makefile ;;
 
   esac
 done # for ac_tag
