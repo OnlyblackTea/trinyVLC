@@ -1,3 +1,2 @@
-AUTOMARK_OPTIONS = gnu
-bin_PROGRAMS = trinyVLC
+AUTOMARK_OPTIONS = foreign
 SUBDIRS = src

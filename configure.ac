@@ -1,8 +1,8 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 
-AC_PREREQ([2.71])
-AC_INIT([trinyVLC], [0.01], [https://github.com/onlyblacktea/trinyVLC/issues])
+AC_PREREQ([2.69])
+AC_INIT([trinyVLC], [0.01], [804559276@qq.com])
 AC_CONFIG_SRCDIR([src/main.cpp])
 AC_CONFIG_HEADERS([config.h])
 AM_INIT_AUTOMAKE([])
@@ -15,7 +15,7 @@ AC_CHECK_LIB([vlc])
 #AC_CHECK_LIB([vlccore])
 
 # Checks for header files.
-AC_CHECK_HEADERS([libvlcpp/vlcpp/vlc.hpp],[]
+AC_CHECK_HEADERS([libvlcpp/vlcpp/vlc.hpp], [],
                  [git clone https://github.com/videolan/libvlcpp.git libvlcpp])
 
 # Checks for typedefs, structures, and compiler characteristics.
@@ -24,5 +24,5 @@ AC_CHECK_HEADERS([libvlcpp/vlcpp/vlc.hpp],[]
 
 AC_CONFIG_SUBDIRS([libvlcpp])
 AC_CONFIG_FILES([Makefile],
-		[src/Makefile])
+		        [src/Makefile])
 AC_OUTPUT
