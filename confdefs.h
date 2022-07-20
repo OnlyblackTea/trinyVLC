@@ -1,0 +1,19 @@
+/* confdefs.h */
+#define PACKAGE_NAME "trinyVLC"
+#define PACKAGE_TARNAME "trinyvlc"
+#define PACKAGE_VERSION "0.01"
+#define PACKAGE_STRING "trinyVLC 0.01"
+#define PACKAGE_BUGREPORT "804559276@qq.com"
+#define PACKAGE_URL ""
+#define PACKAGE "trinyvlc"
+#define VERSION "0.01"
+#define HAVE_STDIO_H 1
+#define HAVE_STDLIB_H 1
+#define HAVE_STRING_H 1
+#define HAVE_INTTYPES_H 1
+#define HAVE_STDINT_H 1
+#define HAVE_STRINGS_H 1
+#define HAVE_SYS_STAT_H 1
+#define HAVE_SYS_TYPES_H 1
+#define HAVE_UNISTD_H 1
+#define STDC_HEADERS 1

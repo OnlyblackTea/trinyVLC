@@ -12,17 +12,15 @@ AC_PROG_CXX
 
 # Checks for libraries.
 AC_CHECK_LIB([vlc])
-#AC_CHECK_LIB([vlccore])
 
 # Checks for header files.
-AC_CHECK_HEADERS([libvlcpp/vlcpp/vlc.hpp], [],
-                 [git clone https://github.com/videolan/libvlcpp.git libvlcpp])
+AC_CHECK_HEADERS([vlcpp/vlc.hpp], [Warning: No libvlcpp Detected, Installing...],
+                 [git clone https://github.com/videolan/libvlcpp.git libvlcpp && cd libvlcpp && ./bootstrap && ./configure && make &&sudo make install])
 
 # Checks for typedefs, structures, and compiler characteristics.
 
 # Checks for library functions.
 
 AC_CONFIG_SUBDIRS([libvlcpp])
-AC_CONFIG_FILES([Makefile],
-		        [src/Makefile])
+AC_CONFIG_FILES([Makefile] [src/Makefile])
 AC_OUTPUT

@@ -23,6 +23,10 @@ This project is also supposed to be working on Debian based distributions.
 
 * Contributor: _Vacant seats awaits._
 
-# Getting Start
+# Install
 
-Just nothing to start.
+just run:
+
+```bash
+$./bootstrap && ./configure && make && sudo make install
+```
